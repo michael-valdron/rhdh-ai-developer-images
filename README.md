@@ -1,4 +1,4 @@
-# Developer Images
+# AI Developer Images - Developer Hub
 
 This repository is a catalog of the Containerfiles and/or Dockerfiles used in the building of images stored in [quay.io/redhat-ai-dev](https://quay.io/organization/redhat-ai-dev).
 

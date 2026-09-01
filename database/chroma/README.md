@@ -6,7 +6,7 @@ The Chroma database Containerfile is a simple wrapper that gives group permissio
 
 The [Containerfile](./Containerfile) for this image is a copy from [github.com/containers/ai-lab-recipes](https://github.com/containers/ai-lab-recipes/blob/main/vector_dbs/chromadb/Containerfile), with an added `RUN` command.
 
-When updating this image you should reference the source listed above and ensure that the version of Chroma matches the dependency version located in the [sample application](https://github.com/redhat-ai-dev/ai-lab-samples/blob/main/rag/requirements.txt#L3).
+When updating this image you should reference the source listed above and ensure that the version of Chroma matches the dependency version located in the [sample application](https://github.com/redhat-developer/rhdh-ai-template/blob/main/samples/rag/requirements.txt#L3).
 
 Example:
 
