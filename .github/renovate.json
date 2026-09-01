@@ -20,15 +20,51 @@
   "osvVulnerabilityAlerts": true,
   "prHourlyLimit": 10,
   "prConcurrentLimit": 10,
-  "packageRules": [
-      {
-        "matchManagers": ["github-actions"],
-        "groupName": "github-actions"
-      },
-      {
-        "matchManagers": ["pep621", "pep723", "pip-compile", "pip_requirements", "pip_setup", "pipenv", "poetry", "pyenv", "runtime-version", "setup-cfg"],
-        "groupName": "python"
-      }
+  "enabledManagers": [
+    "dockerfile",
+    "github-actions",
+    "pep621", 
+    "pep723", 
+    "pip-compile", 
+    "pip_requirements", 
+    "pip_setup", 
+    "pipenv", 
+    "poetry", 
+    "pyenv", 
+    "runtime-version", 
+    "setup-cfg"
   ],
-  "labels": ["renovatebot"]
+  "packageRules": [
+    {
+      "matchManagers": ["dockerfile", "pep621", "pep723", "pip-compile", "pip_requirements", "pip_setup", "pipenv", "poetry", "pyenv", "runtime-version", "setup-cfg"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["pep621", "pep723", "pip-compile", "pip_requirements", "pip_setup", "pipenv", "poetry", "pyenv", "runtime-version", "setup-cfg"],
+      "matchPackageNames": ["python"],
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "github actions",
+      "groupSlug": "github-actions",
+      "commitMessageTopic": "{{depName}}"
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "groupName": "dockerfile deps",
+      "groupSlug": "dockerfile-deps",
+      "commitMessageTopic": "{{depName}}"
+    },
+    {
+      "matchManagers": ["pep621", "pep723", "pip-compile", "pip_requirements", "pip_setup", "pipenv", "poetry", "pyenv", "runtime-version", "setup-cfg"],
+      "groupName": "python deps",
+      "groupSlug": "python-deps",
+      "commitMessageTopic": "{{depName}}"
+    }
+  ],
+  "labels": ["renovatebot"],
+  "reviewers": ["team:rhdh-ai"]
 }
