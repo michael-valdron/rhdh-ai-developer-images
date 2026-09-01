@@ -1,6 +1,6 @@
 # Whisper-Small Model 
 
-The Whisper-Small model image is for use as the `init container` for the [Audio-To-Text Template](https://github.com/redhat-ai-dev/ai-lab-template/tree/main/templates/audio-to-text).
+The Whisper-Small model image is for use as the `init container` for the [Audio-To-Text Template](https://github.com/redhat-developer/rhdh-ai-template/tree/main/templates/audio-to-text).
 
 ## Maintenance
 

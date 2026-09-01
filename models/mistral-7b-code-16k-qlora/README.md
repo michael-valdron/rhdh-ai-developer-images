@@ -1,6 +1,6 @@
 # Mistral-7B-Code-16K-Qlora Model
 
-The Mistral-7B-Code-16K-Qlora model image is for use as the `init container` for the [Codegen Template](https://github.com/redhat-ai-dev/ai-lab-template/tree/main/templates/codegen).
+The Mistral-7B-Code-16K-Qlora model image is for use as the `init container` for the [Codegen Template](https://github.com/redhat-developer/rhdh-ai-template/tree/main/templates/codegen).
 
 ## Maintenance
 

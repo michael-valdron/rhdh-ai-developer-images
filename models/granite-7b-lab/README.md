@@ -1,6 +1,6 @@
 # Granite-7B-Lab Model
 
-The Granite-7B-Lab model image is for use as the `init container` for the [Chatbot Template](https://github.com/redhat-ai-dev/ai-lab-template/tree/main/templates/chatbot).
+The Granite-7B-Lab model image is for use as the `init container` for the [Chatbot Template](https://github.com/redhat-developer/rhdh-ai-template/tree/main/templates/chatbot).
 
 ## Maintenance
 

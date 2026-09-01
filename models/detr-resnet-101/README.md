@@ -1,6 +1,6 @@
 # Detr-Resnet-101 Model 
 
-The Detr-Resnet-101 model image is for use as the `init container` for the [Object Detection Template](https://github.com/redhat-ai-dev/ai-lab-template/tree/main/templates/object-detection).
+The Detr-Resnet-101 model image is for use as the `init container` for the [Object Detection Template](https://github.com/redhat-developer/rhdh-ai-template/tree/main/templates/object-detection).
 
 
 # Downloading The Model
